@@ -9,6 +9,9 @@ import Signup from '../screen/Signup';
 import Home from '../screen/Home';
 import Welcome from '../screen/welcome';
 import Managersignin from '../screen/Managersignin';
+import Selection from '../screen/Selection';
+import VerifyWithID from '../screen/VerifyWithID';
+import VerifyWithQR from '../screen/VerifyWithQR';
 // import Branches from '../Components/User/Branches';
 
 
@@ -22,6 +25,9 @@ export default function Navigation() {
       <Stack.Screen name="Signin" component={Signin} />
       <Stack.Screen name="Signup" component={Signup} />
       <Stack.Screen name="Home" component={Home} />
+      <Stack.Screen name="Selection" component={Selection} />
+      <Stack.Screen name="VerifywithID" component={VerifyWithID} />
+      <Stack.Screen name="VerifywithQR" component={VerifyWithQR} />
       <Stack.Screen name="Managersignin" component={Managersignin} />
 
     </Stack.Navigator>

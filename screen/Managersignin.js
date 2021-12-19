@@ -2,7 +2,7 @@ import React, { useState, useContext } from 'react';
 import { StyleSheet, View, Text, TextInput, Pressable, Image } from 'react-native';
 import { getAuth, signInWithEmailAndPassword } from '../Navigator/Firebase';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
+import Selection from './Selection';
 import { GlobalContext } from '../context/Context';
 
 export default function Managersignin({ navigation }) {
@@ -33,7 +33,7 @@ export default function Managersignin({ navigation }) {
 
       // let { user } = await signInWithEmailAndPassword(auth, email, password);
       // dispatch({ type: "LOGIN_USER", payload:user.email });
-      navigation.navigate('Home')
+      navigation.navigate('Selection')
 
 
     } catch (err) {
